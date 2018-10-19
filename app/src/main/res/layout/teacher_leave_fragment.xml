@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1efef">
+
+    <LinearLayout
+        android:id="@+id/class_rel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:weightSum="1"
+        android:background="@drawable/boxwhite">
+
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_class"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select class name"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="#aaf4961b"/>
+
+            <Spinner
+                android:id="@+id/class_spinner"
+                android:layout_alignParentBottom="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"></Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/yellowcolor"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/section_rel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:weightSum="1"
+        android:background="@drawable/boxwhite">
+
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_section"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select class section"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="#aaf4961b"/>
+
+            <Spinner
+                android:id="@+id/section_spinner"
+                android:layout_alignParentBottom="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"></Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/yellowcolor"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_demo_child_count="10"
+                android:scrollbars="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

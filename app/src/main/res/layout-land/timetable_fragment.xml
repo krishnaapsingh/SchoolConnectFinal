@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellowcolor"
+                app:theme="@style/ThemeToolbar" />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/day_layout"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp">
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:background="#fea430"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#ff9b19"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#fea430"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wednesday"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="#ff9b19"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#fea430"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friday"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#ff9b19"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/action_bar"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" /></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" /></RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

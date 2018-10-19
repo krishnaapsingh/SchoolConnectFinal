@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#f1efef">
+          <RelativeLayout
+              android:id="@+id/rel_main"
+              android:layout_width="match_parent"
+              android:layout_height="48dp">
+              <android.support.v7.widget.Toolbar
+                  android:id="@+id/toolbar"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/yellowcolor"
+                  app:theme="@style/ThemeToolbar" />
+
+              <ImageView
+                  android:id="@+id/back_img"
+                  android:layout_marginLeft="10dp"
+                  android:layout_centerVertical="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_arrow_back"/>
+          </RelativeLayout>
+
+
+          <RelativeLayout
+              android:layout_marginTop="5dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginLeft="10dp"
+              android:id="@+id/date_rel1"
+              android:layout_below="@+id/rel_main"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:fontFamily="@font/roboto_medium"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Start date"/>
+
+
+
+
+
+              <TextView
+                  android:layout_marginRight="15dp"
+                  android:fontFamily="@font/roboto_medium"
+                  android:layout_alignParentRight="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="End date"/>
+
+          </RelativeLayout>
+          <RelativeLayout
+              android:layout_margin="10dp"
+              android:id="@+id/date_rel"
+              android:layout_below="@+id/date_rel1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:id="@+id/start_date"
+                  android:fontFamily="@font/roboto_medium"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="12/10/2017"/>
+
+
+              <TextView
+                  android:fontFamily="@font/roboto_medium"
+                  android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="To"/>
+
+
+              <TextView
+                  android:id="@+id/end_date"
+                  android:fontFamily="@font/roboto_medium"
+                  android:layout_alignParentRight="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="12/10/2017"/>
+
+          </RelativeLayout>
+
+          <RelativeLayout
+             android:layout_below="@+id/date_rel"
+              android:layout_above="@+id/btn_lay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:padding="10dp"
+                  android:id="@+id/msg_txt"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textColor="@color/black"/>
+
+          </RelativeLayout>
+
+
+
+          <LinearLayout
+              android:id="@+id/btn_lay"
+              android:layout_above="@+id/footer"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_marginBottom="10dp"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.95">
+                  <Button
+                      android:textAllCaps="false"
+                      android:fontFamily="@font/roboto_medium"
+                      android:id="@+id/btn_approve"
+                      android:layout_centerHorizontal="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@color/green"
+                      android:textColor="@color/white"
+                      android:paddingLeft="13dp"
+                      android:paddingRight="13dp"
+                      android:textSize="16sp"
+                      android:text=" Approve"/>
+              </RelativeLayout>
+
+              <View
+                  android:layout_weight="0.1"
+                  android:layout_width="0dp"
+                  android:layout_height="0dp"/>
+
+              <RelativeLayout
+                  android:layout_marginBottom="10dp"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.95">
+                  <Button
+                      android:textAllCaps="false"
+                      android:fontFamily="@font/roboto_medium"
+                      android:id="@+id/btn_unapprove"
+                      android:layout_centerHorizontal="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@color/red"
+                      android:textColor="@color/white"
+                      android:paddingLeft="13dp"
+                      android:paddingRight="13dp"
+                      android:textSize="16sp"
+                      android:text="Disapprove"/>
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <RelativeLayout
+              android:id="@+id/footer"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true" >
+              <ImageView
+                  android:scaleType="fitXY"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:src="@drawable/ad"/>
+          </RelativeLayout>
+      </RelativeLayout>
+  </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#299C6706">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <RelativeLayout
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="0.75"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_medium"
+                        android:id="@+id/clg_name"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minLines="1"
+                        android:maxLines="1"
+                        android:text="Connect2School"
+                        android:textSize="22sp"/>
+                    <TextView
+                        android:layout_below="@+id/clg_name"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minLines="1"
+                        android:maxLines="1"
+                        android:text="Noida"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/user_image"
+                android:layout_marginRight="5dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="0dp"
+                android:src="@drawable/mypic"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0"
+                app:civ_shadow_color="#8BC34A"/>
+
+            <ImageView
+                android:id="@+id/refresh_data"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/refresh"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <ScrollView
+                android:layout_above="@+id/ad_layout"
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:id="@+id/input_layout_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:editable="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:paddingLeft="5dp"
+                            android:id="@+id/name_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name"
+                            android:textSize="17sp"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="2dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:id="@+id/email_txt"
+                            android:editable="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:paddingLeft="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email address"
+                            android:textSize="17sp"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="2dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:id="@+id/mobile_txt"
+                            android:editable="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:paddingLeft="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile no."
+                            android:textSize="17sp"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:shimmer_demo_child_count="10"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+            </ScrollView>
+            <RelativeLayout
+                android:id="@+id/ad_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ad"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

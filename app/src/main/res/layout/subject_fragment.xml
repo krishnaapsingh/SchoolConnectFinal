@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/select_student_layout"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:background="@drawable/boxwhite">
+
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/std_name"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select class"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="#aaf4961b"/>
+
+            <Spinner
+                android:id="@+id/spinner_std"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"></Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/yellowcolor"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:layout_below="@+id/select_student_layout"
+        android:id="@+id/subject_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_demo_child_count="10"
+        ></com.cooltechworks.views.shimmer.ShimmerRecyclerView>
+
+</RelativeLayout>

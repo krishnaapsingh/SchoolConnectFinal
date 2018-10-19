@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>DashBoard</item>
+        <item>Profile</item>
+        <item>Home Work</item>
+        <item>Exam. Schedule</item>
+        <item>Subject</item>
+        <item>Syllabus</item>
+        <item>Calender</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <string-array name="ld_student">
+        <item>DashBoard</item>
+        <item>Profile</item>
+        <item>Subject</item>
+        <item>Syllabus</item>
+        <item>Calender</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <string-array name="teacher_drawer">
+        <item>DashBoard</item>
+        <item>Profile</item>
+        <item>Home Work</item>
+        <item>Syllabus</item>
+        <item>Calender</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <string-array name="parent_drawer">
+        <item>DashBoard</item>
+        <item>Profile</item>
+        <item>Home Work</item>
+        <item>Exam. Schedule</item>
+        <item>Assign Subject</item>
+        <item>Syllabus</item>
+        <item>Calender</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/dashboard</item>
+        <item>@drawable/ic_account_outline_grey600_24dp</item>
+        <item>@drawable/homework</item>
+        <item>@drawable/subject</item>
+        <item>@drawable/subject</item>
+        <item>@drawable/syllabus</item>
+        <item>@drawable/calender</item>
+
+        <item>@drawable/ic_logout_grey600_24dp</item>
+    </array>
+
+    <array name="techer_activityScreenIcons">
+        <item>@drawable/dashboard</item>
+        <item>@drawable/ic_account_outline_grey600_24dp</item>
+        <item>@drawable/homework</item>
+        <item>@drawable/syllabus</item>
+        <item>@drawable/calender</item>
+        <item>@drawable/ic_logout_grey600_24dp</item>
+    </array>
+
+    <array name="stduicon">
+        <item>@drawable/dashboard</item>
+        <item>@drawable/ic_account_outline_grey600_24dp</item>
+        <item>@drawable/subject</item>
+        <item>@drawable/syllabus</item>
+        <item>@drawable/calender</item>
+        <item>@drawable/ic_logout_grey600_24dp</item>
+    </array>
+
+    <array name="attendance_type">
+        <item>Present Type</item>
+        <item>All Present</item>
+        <item>All Absent</item>
+        <item>All Late</item>
+        <item>All Holiday</item>
+    </array>
+
+    <array name="attendance_type1">
+
+    </array>
+
+</resources>

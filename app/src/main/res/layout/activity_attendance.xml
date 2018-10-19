@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#9befeeee">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellowcolor"
+                app:theme="@style/ThemeToolbar"
+                app:title=""
+                app:subtitle=""/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/save_btn"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_below="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="1dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class: "
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/class_name"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:minLines="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="1dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date: "
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/date_txt"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:minLines="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/boxwhite">
+
+                    <RelativeLayout
+                        android:layout_weight="0.8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/attendancespinner_txt"
+                            android:fontFamily="@font/roboto_regular"
+                            android:paddingLeft="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select type"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textColorHint="#aaf4961b"/>
+
+                        <Spinner
+                            android:id="@+id/attendance_spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            ></Spinner>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:background="@color/yellowcolor"
+                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/spinner_image"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/down_arrow"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="1dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Section: "
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/section_txt"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:minLines="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="1dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total student: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/total_std"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Present: "
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:minLines="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="1dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Absent: "
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:minLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_below="@+id/card_view"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:shimmer_demo_child_count="10"
+                    android:scrollbars="vertical" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

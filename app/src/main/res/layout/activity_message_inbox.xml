@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellowcolor"
+                app:theme="@style/ThemeToolbar" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_demo_child_count="10"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+</RelativeLayout>

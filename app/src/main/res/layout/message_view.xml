@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/calendar_layout"
+        android:layout_below="@+id/spinner_layout"
+        android:layout_margin="10dp"
+        android:background="@drawable/boxdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="start"
+            android:id="@+id/textnotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text=""
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_below="@+id/textnotice"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="start"
+            android:id="@+id/textmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:text=""
+            android:paddingLeft="15dp"/>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"/>
+                <TextView
+                    android:id="@+id/day_txt"
+                    android:textColor="@color/yellowcolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Firday"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"/>
+                <TextView
+                    android:id="@+id/time_txt"
+                    android:maxLength="8"
+                    android:textColor="@color/yellowcolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04:26 PM"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

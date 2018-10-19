@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#9befeeee">
+
+    <LinearLayout
+        android:id="@+id/select_student_layout"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:background="@drawable/boxwhite">
+
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+              android:id="@+id/std_name"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select name of teacher"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="#aaf4961b"
+                android:singleLine="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/yellowcolor"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adminll"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/select_student_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send message to admin"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_above="@+id/inbox_btn"
+        android:layout_below="@+id/adminll"
+        android:id="@+id/input_layout"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:background="@color/yellowcolor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <EditText
+                    android:id="@+id/msg_txt"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="5dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="10"
+                    android:maxLines="20"
+                    android:hint="Discribe"
+                    android:gravity="start"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/inbox_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/inbox"/>
+</RelativeLayout>

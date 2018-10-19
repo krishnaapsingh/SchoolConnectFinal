@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:background="@color/yellowcolor">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="20sp"
+                    android:text="Pavan Kumar"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                  <LinearLayout
+                      android:gravity="center_horizontal"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.8">
+                      <TextView
+                          android:gravity="center_horizontal"
+                          android:layout_gravity="center_horizontal"
+                          android:textSize="18sp"
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:fontFamily="@font/roboto_regular"
+                          android:text="Class-2"/>
+                  </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8">
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Section-B"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.4">
+                        <TextView
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Roll No.- 0444"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="2"
+                android:layout_weight="1.65">
+
+                <RelativeLayout
+                    android:layout_weight="1.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyview_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_weight="0.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <RelativeLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowcolor">
+
+                            </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:textAllCaps="false"
+                            android:id="@+id/hisbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payment History"
+                            android:background="@color/black"
+                            android:textColor="@color/white"
+                           android:layout_gravity="center_horizontal"
+                            android:paddingLeft="60dp"
+                            android:paddingRight="60dp"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyview_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/user_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_color="@color/yellowcolor"
+                app:civ_border_width="5dp"
+                android:src="@drawable/mypic"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0"
+                app:civ_shadow_color="@color/yellowcolor"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.85"></RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

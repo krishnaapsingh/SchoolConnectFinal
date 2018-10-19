@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "656369811707",
+    "firebase_url": "https://connecttwoschool.firebaseio.com",
+    "project_id": "connecttwoschool",
+    "storage_bucket": "connecttwoschool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656369811707:android:9fea3fdfc14d9288",
+        "android_client_info": {
+          "package_name": "com.trieffects.ConnecttwoSchool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656369811707-3disvaajmlbd305cit3ke4iuj2qmsjbe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trieffects.ConnecttwoSchool",
+            "certificate_hash": "32fa30b8e6f9310fff2731784d8ccc42d69248d5"
+          }
+        },
+        {
+          "client_id": "656369811707-m3q7tdl0n4snns4jgdparm1bu49h5lqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhDC_wjLhWAwyqA_sGvBq3aVwtD1n5UnQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656369811707-jogejq843ujpg921tqstefc49v1h590f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trieffects.ConnecttwoSchool"
+              }
+            },
+            {
+              "client_id": "656369811707-m3q7tdl0n4snns4jgdparm1bu49h5lqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_below="@+id/recycler_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/loadmorebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Load more..." />
+    <RelativeLayout
+        android:id="@+id/calendar_layout"
+        android:layout_below="@+id/spinner_layout"
+        android:layout_margin="10dp"
+        android:background="@drawable/boxdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:paddingLeft="15dp"
+            android:gravity="start|center_vertical"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:background="@color/yellowcolor"
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:id="@+id/textnotice"
+            android:layout_below="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:text=""/>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textnotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"/>
+                <TextView
+                    android:id="@+id/day_txt"
+                    android:textColor="#4CAF50"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Firday"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"/>
+                <TextView
+                    android:id="@+id/time_txt"
+                    android:textColor="#F44336"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04:26 PM"
+                    android:maxLength="8"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/datetxt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text=""
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

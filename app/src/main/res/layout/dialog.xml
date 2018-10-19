@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/calendar_layout"
+        android:layout_below="@+id/spinner_layout"
+        android:background="@drawable/boxdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:paddingLeft="15dp"
+            android:gravity="start|center_vertical"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:background="@color/yellowcolor"
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/close_pop"
+            android:text="Close"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_below="@+id/heading"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/subject_lay"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/boxwhite">
+
+                        <RelativeLayout
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/subject_txt"
+                                android:fontFamily="@font/roboto_regular"
+                                android:paddingLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select Subject"
+                                android:textSize="15sp"
+                                android:singleLine="true"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:textColor="@color/black"
+                                android:textColorHint="#aaf4961b"/>
+
+                            <Spinner
+                                android:layout_alignParentBottom="true"
+                                android:id="@+id/subject_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:spinnerMode="dialog"></Spinner>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@color/textColorSecondary"
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/spinner_image"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down_arrow"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/date_pick"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/boxwhite">
+
+                        <RelativeLayout
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/date_txt"
+                                android:fontFamily="@font/roboto_regular"
+                                android:paddingLeft="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select Date"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:textColorHint="#aaf4961b"
+                                android:singleLine="true"
+                                android:maxLines="1"
+                                android:minLines="1"/>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@color/textColorSecondary"
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/calendar"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boxdesign">
+
+
+                <EditText
+                    android:id="@+id/des_txt"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="5"
+                    android:hint="Enter discription of home work example-chapter number, page number, paragraph etc."/>
+
+
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If you have any attachments of homework"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/attch_image"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/attach"/>
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/file_name"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/save_homebtn"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:background="@color/yellowcolor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

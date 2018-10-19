@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Connect2School</string>
+    <string name="hint_email">User Name</string>
+    <string name="header">Header</string>
+
+    <string-array name="month_of_year">
+        <item>--Select month --</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string name="geofence_enter">Now entering %1$s</string>
+    <string name="geofence_dwell">Dwelling in %1$s</string>
+    <string name="geofence_exit">Now exiting %1$s</string>
+    <string name="events">Events</string>
+    <string name="map">Map</string>
+    <string name="transition">Transition</string>
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">App registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">Too many PendingIntents provided</string>
+    <string name="unknown_geofence_error">Unknown error</string>
+    <string name="geofences_added">Geofences added</string>
+    <string name="geofences_removed">Geofences removed</string>
+    <string name="s_n_no">S \n No</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="description">Media Controls</string>
+    <string name="password">Password</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="name_of_school"><u>Name of School</u></string>
+
+</resources>
